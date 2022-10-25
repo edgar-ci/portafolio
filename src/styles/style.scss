@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css");
+
+@import "variables";
+@import "base";
+@import "particles";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/helpers";
+@import "node_modules/bootstrap/scss/utilities/api";
+
+@import "sections/landing";
+@import "sections/about";
+
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+.bg-section{
+  background-color: rgba(#111, 0.9);
+}

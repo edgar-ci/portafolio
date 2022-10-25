@@ -1,0 +1,97 @@
+@function particles-shadow($n) {
+  $value: "#{random(3000)}px #{random(3000)}px rgba(250,250,250,0.#{random(5)})";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(3000)}px #{random(3000)}px rgba(250,250,250,0.#{random(5)})";
+  }
+
+  @return unquote($value);
+}
+
+.particles {
+  background: $dark;
+  background: linear-gradient(to top, 
+      $dark 14%,
+      darken($bg-gradient, 5%) 35%,
+      darken($bg-gradient, 3%) 60%,
+      darken($bg-gradient, 0%) 90%);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  span {
+    position: absolute;
+    content: " ";
+    background: transparent;
+    left: 0;
+    &:after {
+      top: 2000px;
+      content: " ";
+      background: transparent;
+      position: absolute;
+    }
+  }
+  span:first-child {
+    width: 1px;
+    height: 1px;
+    box-shadow: particles-shadow(700);
+    animation: particlesMove 120s linear infinite;
+    &:after {
+      width: 1px;
+      height: 1px;
+      box-shadow: particles-shadow(700);
+    }
+  }
+  span:nth-child(2) {
+    width: 2px;
+    height: 2px;
+    box-shadow: particles-shadow(200);
+    animation: particlesMove 100s linear infinite;
+    &:after {
+      width: 2px;
+      height: 2px;
+      box-shadow: particles-shadow(200);
+    }
+  }
+  span:nth-child(3) {
+    width: 2px;
+    height: 2px;
+    box-shadow: particles-shadow(220);
+    animation: particlesMove 120s linear infinite;
+    &:after {
+      width: 2px;
+      height: 2px;
+      box-shadow: particles-shadow(220);
+    }
+  }
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes particlesMove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}

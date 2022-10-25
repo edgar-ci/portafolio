@@ -1,0 +1,55 @@
+.about{
+    padding: 48px 8px;
+    position: relative;
+    .wrap{
+        justify-content: center;
+        align-items: center;
+    }
+    &__emoji{
+        font-size: 2.5em;
+        font-style: normal;
+    }
+    &__caption{
+        display: flex;
+        align-self: center;
+        padding: 32px 0;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &--description{
+            font-family: 'Roboto', sans-serif;
+            color: $primary;
+            font-size: 1.2em;
+            max-width: 480px;
+        }
+    }
+   
+   
+    &__title{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            text-align: center;
+            top: 0;
+            position: relative;
+            z-index: 2;
+            font-size: 15em;
+            text-transform: uppercase;
+            color: $primary;
+            opacity: 0.03;
+            z-index: -1;
+            line-height: 1;
+        }
+    }
+}
