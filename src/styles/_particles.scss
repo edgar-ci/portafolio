@@ -9,11 +9,11 @@
 
 .particles {
   background: $dark;
-  background: linear-gradient(to top, 
-      $dark 14%,
-      darken($bg-gradient, 5%) 35%,
-      darken($bg-gradient, 3%) 60%,
-      darken($bg-gradient, 0%) 90%);
+  /* background: linear-gradient(to top, 
+    $dark 2%,
+    rgba($dark, 1) 10%,
+    rgba($dark, 1) 20%,
+    $bg-gradient); */
   width: 100%;
   height: 100vh;
   position: absolute;

@@ -24,7 +24,7 @@
 
         &--description{
             font-family: 'Roboto', sans-serif;
-            color: $info;
+            color: $primary;
             font-size: 1.3em;
             max-width: 580px;
         }
@@ -45,12 +45,12 @@
             top: 0;
             position: relative;
             z-index: 2;
-            font-size: 15em;
+            font-size: 16em;
             text-transform: uppercase;
-            color: $primary;
-            opacity: 0.06;
-            z-index: -1;
+            color: $success;
+            opacity: 0.04;
             line-height: 1;
+            text-shadow: 1px 1px 10px $info;
         }
     }
 }

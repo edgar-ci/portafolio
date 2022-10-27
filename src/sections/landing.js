@@ -23,6 +23,7 @@ const Landing = () => {
         </div>
         <SocialLinks />
         <a href="" className="btn landing__cv--btn">
+          <span></span>
           <i className="far fa-arrow-alt-circle-down"></i>
           Download CV
         </a>
