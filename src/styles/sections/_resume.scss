@@ -1,0 +1,19 @@
+$bg-resume: #3C3D59;
+//$bg-resume: $gray-100;
+//$bg-resume: rgba($primary, 0.9);
+
+.resume{
+    background-color: $bg-resume;
+    padding: 0 0 ;
+    #wave{
+        margin-top: -60px;
+        transform: rotate(200grad)
+    }
+    .container {
+        padding: 42px 0;
+    }
+
+    &__card{
+
+    }
+}

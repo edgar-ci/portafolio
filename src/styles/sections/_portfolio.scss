@@ -1,0 +1,17 @@
+.portfolio{
+    padding: 82px 8px;
+
+    &--works {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &--item {
+        position: relative;
+        margin: 8px;
+
+        h1 {
+            position: absolute;
+        }
+    }
+}

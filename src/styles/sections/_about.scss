@@ -1,6 +1,7 @@
 .about{
-    padding: 48px 8px;
+    padding: 82px 8px;
     position: relative;
+    background-color: $dark;
     .wrap{
         justify-content: center;
         align-items: center;
@@ -23,9 +24,9 @@
 
         &--description{
             font-family: 'Roboto', sans-serif;
-            color: $primary;
-            font-size: 1.2em;
-            max-width: 480px;
+            color: $info;
+            font-size: 1.3em;
+            max-width: 580px;
         }
     }
    
@@ -47,7 +48,7 @@
             font-size: 15em;
             text-transform: uppercase;
             color: $primary;
-            opacity: 0.03;
+            opacity: 0.06;
             z-index: -1;
             line-height: 1;
         }
