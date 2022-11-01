@@ -1,36 +1,12 @@
 import React from "react";
-import PortfolioImg from "../assets/img/portfolio.jpg";
-
-const listWorks = [
-  {
-    image: PortfolioImg,
-    text: "Nombre",
-    link: "#",
-  },
-  {
-    image: PortfolioImg,
-    text: "Nombre",
-    link: "#",
-  },
-  {
-    image: PortfolioImg,
-    text: "Nombre",
-    link: "#",
-  },
-  {
-    image: PortfolioImg,
-    text: "Nombre",
-    link: "#",
-  },
-];
+import PortFolioList from "../constants/portfolio-list";
 
 const Portfolio = () => {
   return (
     <div className="container portfolio">
-      <h1 className="text-uppercase text-primary mb-5">My Portfolio</h1>
-
+      <h1 className="mb-5 portfolio--title">Portfolio</h1>
       <div className="portfolio--works">
-        {listWorks.map((work, index) => (
+        {PortFolioList.map((work, index) => (
           <div className="portfolio--window" key={index}>
             <i className="portfolio--window__icon" />
             <i className="portfolio--window__icon" />

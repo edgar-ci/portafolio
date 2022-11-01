@@ -1,9 +1,9 @@
 .portfolio{
     padding: 82px 8px;
-    
+    max-width: 992px;
     &--works {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     
@@ -51,5 +51,11 @@
                 background-color: #00CA4E;
             }
         }
+    }
+
+    &--title {
+        text-align: center;
+        color: $gray-100;
+        font-weight: 500;
     }
 }
