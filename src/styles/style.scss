@@ -16,7 +16,6 @@
 @import "node_modules/bootstrap/scss/containers";
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/transitions";
-@import "node_modules/bootstrap/scss/progress";
 @import "node_modules/bootstrap/scss/modal";
 @import "node_modules/bootstrap/scss/helpers";
 @import "node_modules/bootstrap/scss/utilities/api";
@@ -25,6 +24,7 @@
 @import "sections/about";
 @import "sections/resume";
 @import "sections/portfolio";
+@import "progress";
 
 .font-weight-medium {
   font-weight: 500 !important;

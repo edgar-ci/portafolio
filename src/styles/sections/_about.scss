@@ -24,7 +24,6 @@
 
         &--description{
             font-family: 'Roboto', sans-serif;
-            color: $primary;
             font-size: 1.3em;
             max-width: 580px;
         }
@@ -47,10 +46,10 @@
             z-index: 2;
             font-size: 16em;
             text-transform: uppercase;
-            color: $success;
-            opacity: 0.04;
+            color: $primary;
+            opacity: 0.035;
             line-height: 1;
-            text-shadow: 1px 1px 10px $info;
+            text-shadow: 1px 1px 10px $secondary;
         }
     }
 }

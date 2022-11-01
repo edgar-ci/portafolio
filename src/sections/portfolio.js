@@ -26,23 +26,23 @@ const listWorks = [
 
 const Portfolio = () => {
   return (
-    <div className="container-fluid pt-5 pb-3" id="portfolio">
-      <div className="container">
-        <h1 className="position-absolute text-uppercase text-primary mb-5">
-          My Portfolio
-        </h1>
-        <div className="portfolio--works">
-          {listWorks.map((work, index) => (
-            <a className="portfolio--item" href={work.link} key={index}>
+    <div className="container portfolio">
+      <h1 className="text-uppercase text-primary mb-5">My Portfolio</h1>
+
+      <div className="portfolio--works">
+        {listWorks.map((work, index) => (
+          <div className="portfolio--window" key={index}>
+            <i className="portfolio--window__icon" />
+            <i className="portfolio--window__icon" />
+            <i className="portfolio--window__icon" />
+            <a className="portfolio--item" href={work.link}>
               <h1>{work.text}</h1>
-              <img
-                className="img-fluid rounded w-100"
-                src={work.image}
-                alt=""
-              />
+              <div className="portfolio--item__img">
+                <img className="img-fluid" src={work.image} alt="" />
+              </div>
             </a>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

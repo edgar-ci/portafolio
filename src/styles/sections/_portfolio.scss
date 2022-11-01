@@ -1,17 +1,55 @@
 .portfolio{
     padding: 82px 8px;
-
+    
     &--works {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     
     &--item {
         position: relative;
-        margin: 8px;
-
+        display: block;
         h1 {
+            display: none;
             position: absolute;
+        }
+        &__img {
+            height: 150px;
+            width: 280px;
+            overflow: hidden;
+            border-radius: 5px;
+            opacity: 0.6;
+        }
+    }
+    &--window{
+        background-color: lighten($dark, 15%);
+        background-color: $gray-100;
+        padding: 21px 8px 8px;
+        margin: 8px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        &__icon {
+            top: 7px;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            display: inline-block;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            &:first-child{
+                left: 12px;
+                background-color: #FF605C;
+            }
+            &:nth-child(2){
+                left: 22px;
+                background-color: #FFBD44;
+            }
+            &:nth-child(3){
+                left: 32px;
+                background-color: #00CA4E;
+            }
         }
     }
 }

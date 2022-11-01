@@ -1,0 +1,43 @@
+
+.progress {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  
+  &--bar {
+    height: $bar-heigth;
+    background-color: lighten($bar-bg, 15%);
+    border-radius: 1px;
+    display: flex;
+  }
+  
+  &__item {
+    background-color: lighten($bar-bg, 5%);
+  }
+  
+  &__name {
+    background-color: $bar-bg;
+    height: $bar-heigth;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  &__percent {
+    padding: 0 16px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  &__description {
+    position: absolute;
+    width: 100%;
+    color: lighten($bar-bg, 60%);
+    height: $bar-heigth;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

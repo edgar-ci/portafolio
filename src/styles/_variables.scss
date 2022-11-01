@@ -6,14 +6,14 @@ $border-radius:  1.3rem !default;
 $enable-responsive-font-sizes: true;
 
 $primary: #2477BF;
-$secondary: #028A9E;
-$success: #312559;
-$info: #023550;
-$dark-100: #111426;
+$secondary: #312559;
 $dark: #04070D;
 $gray-100: #f8f9fa !default;
 
-$bg-gradient: $dark-100;
+$bg-gradient: #111426;
 $body-bg: $dark;
-$body-color: rgb(116,116,116);
+$body-color: $primary;
 $headings-color:  $gray-100;
+
+$bar-heigth: 40px;
+$bar-bg: $secondary;
