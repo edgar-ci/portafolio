@@ -4,7 +4,7 @@ import PortFolioList from "../constants/portfolio-list";
 const Portfolio = () => {
   return (
     <div className="container portfolio">
-      <h1 className="mb-5 portfolio--title">Portfolio</h1>
+      <h2 className="mb-5 portfolio--title">Portfolio</h2>
       <div className="portfolio--works">
         {PortFolioList.map((work, index) => (
           <div className="portfolio--window" key={index}>

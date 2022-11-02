@@ -7,7 +7,7 @@ const Skill = () => {
     <div className="skills">
       <div className="container">
         <div className="skills__wrapper">
-          <h2 className="text-secondary">Skills</h2>
+          <h2 className="text-secondary skills--title">Skills</h2>
           <div className="skills--wrap">
             {skillList.map((skill) => (
               <ProgressBar {...skill} key={skill.name} />

@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <div className="wrap landing ">
       <Particles />
-      <div>
+      <div className="landing--wrapped">
         <div className="profile-img">
           <img
             className="img-fluid rounded-circle shadow-sm"
@@ -17,9 +17,9 @@ const Landing = () => {
         </div>
         <div>
           <h1 className="landing__name">Edgar García</h1>
-          <p className="landing__description">
+          <h2 className="landing__description">
             Full Stack JavaScript Developer.
-          </p>
+          </h2>
         </div>
         <SocialLinks />
         <a href="" className="btn landing__cv--btn">

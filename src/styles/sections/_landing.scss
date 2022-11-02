@@ -6,19 +6,21 @@
   box-shadow: inset 0 -90px 200px 0px $dark;
   max-height: 1024px;
   padding-top: 82px;
+  &--wrapped {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__name {
-    font-size: 1.625rem;
-    font-weight: 600;
     margin-bottom: 12px;
     color: $gray-100;
   }
 
   &__description {
-    font-weight: 600;
-    line-height: 1;
+    color: $primary;
     margin-bottom: 24px;
-    font-size: 1.2em;
   }
 
   &__cv--btn {
@@ -72,49 +74,6 @@
       }
     }
   }
-
-  .fb {
-    background-color: #1877f2;
-    color: $gray-100;
-    &:hover {
-      color: #1877f2;
-    }
-  }
-  .tw {
-    background-color: #1da1f2;
-    color: $gray-100;
-    &:hover {
-      color: #1da1f2;
-    }
-  }
-  .lk {
-    background-color: #0a66c2;
-    color: $gray-100;
-    &:hover {
-      color: #0a66c2;
-    }
-  }
-  .in {
-    background-color: #c32aa3;
-    color: $gray-100;
-    &:hover {
-      color: #c32aa3;
-    }
-  }
-}
-
-.btn-social {
-  background-color: rgba($dark, 0.9);
-  border-radius: 8px;
-  margin: 4px;
-  width: 40px;
-  height: 40px;
-  line-height: 1.2;
-  font-size: 1.2em;
-  padding: 8px;
-  &:hover {
-    background-color: #fff;
-  }
 }
 
 .profile-img {
@@ -123,11 +82,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   padding: 8px;
   background-size: 100%;
   border-radius: 50%;
-  max-width: 250px;
+  max-width: 230px;
   margin-bottom: 16px;
+  img {
+    display: flex;
+    align-self: center;
+  }
 }
 
 .wrap {

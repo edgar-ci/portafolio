@@ -1,0 +1,50 @@
+.btn-social {
+  background-color: rgba($dark, 0.9);
+  border-radius: 8px;
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+  line-height: 1.2;
+  font-size: 1.2em;
+  padding: 8px;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.fb {
+  background-color: #1877f2;
+  color: $gray-100;
+  &:hover {
+    color: #1877f2;
+  }
+}
+.tw {
+  background-color: #1da1f2;
+  color: $gray-100;
+  &:hover {
+    color: #1da1f2;
+  }
+}
+.lk {
+  background-color: #0a66c2;
+  color: $gray-100;
+  &:hover {
+    color: #0a66c2;
+  }
+}
+.in {
+  background-color: #c32aa3;
+  color: $gray-100;
+  &:hover {
+    color: #c32aa3;
+  }
+}
+
+.envelope{
+  background-color: #E84F4B;
+  color: $gray-100;
+  &:hover{
+    color: #E84F4B;
+  }
+}
