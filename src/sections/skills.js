@@ -5,15 +5,6 @@ import skillList from "../constants/skill-list";
 const Skill = () => {
   return (
     <div className="skills">
-      <span className="bg-1">
-        <i />
-        <i />
-        <i />
-        <i />
-        <i />
-        <i />
-      </span>
-
       <div className="container">
         <div className="skills__wrapper">
           <h2 className="text-secondary">Skills</h2>
@@ -24,6 +15,12 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      <span className="bg-1">
+        <i />
+        <i />
+        <i />
+        <i />
+      </span>
     </div>
   );
 };

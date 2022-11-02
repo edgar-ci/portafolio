@@ -1,6 +1,5 @@
 .portfolio{
     padding: 82px 8px;
-    max-width: 992px;
     &--works {
         display: flex;
         justify-content: space-evenly;
@@ -9,45 +8,88 @@
     
     &--item {
         position: relative;
-        display: block;
         h1 {
             display: none;
             position: absolute;
         }
+
         &__img {
-            height: 150px;
-            width: 280px;
+            height: 300px;
+            width: 380px;
             overflow: hidden;
             border-radius: 5px;
-            opacity: 0.6;
+            opacity: 1;
+            position: relative;
+            display: block;
+        }
+
+        &__icon {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            margin: 0 auto;
+            margin-top: -0.5em;
+            text-align: center;
+            color: $gray-300;
+            font-size: 3em;
+            opacity: 0.9;
+        }
+
+        &__link{
+            position: absolute;
+            background-color: rgba($secondary, 0.5);
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            border-radius: 40%;
+            transform: scale(0.1);
+            opacity: 0;
+            transition: all 200ms linear;
+        }
+        &:hover {
+            .portfolio--item__link{
+                border-radius: 0;
+                transform: scale(1);
+                opacity: 1;
+            }
         }
     }
     &--window{
-        background-color: lighten($dark, 15%);
-        background-color: $gray-100;
-        padding: 21px 8px 8px;
-        margin: 8px;
+        background-color: $gray-300;
+        padding: 24px 8px 8px;
+        margin: 16px;
         border-radius: 5px;
         overflow: hidden;
         position: relative;
         &__icon {
-            top: 7px;
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            display: inline-block;
+            display: block;
+            top: -12px;
+            position: relative;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-            &:first-child{
-                left: 12px;
-                background-color: #FF605C;
+            left: 12px;
+            background-color: #FF605C;
+            &::after, &::before {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             }
-            &:nth-child(2){
-                left: 22px;
+            &::after{
+                content: ' ';
+                left: 12px;
                 background-color: #FFBD44;
             }
-            &:nth-child(3){
-                left: 32px;
+            &::before{
+                content: ' ';
+                left: 22px;
                 background-color: #00CA4E;
             }
         }

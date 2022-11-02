@@ -9,13 +9,18 @@ const Portfolio = () => {
         {PortFolioList.map((work, index) => (
           <div className="portfolio--window" key={index}>
             <i className="portfolio--window__icon" />
-            <i className="portfolio--window__icon" />
-            <i className="portfolio--window__icon" />
-            <a className="portfolio--item" href={work.link}>
-              <h1>{work.text}</h1>
-              <div className="portfolio--item__img">
+            <a
+              className="portfolio--item"
+              href={work.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="portfolio--item__link">
+                <i className="fas fa-link portfolio--item__icon" />
+              </span>
+              <span className="portfolio--item__img">
                 <img className="img-fluid" src={work.image} alt="" />
-              </div>
+              </span>
             </a>
           </div>
         ))}

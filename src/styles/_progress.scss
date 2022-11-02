@@ -6,13 +6,17 @@
   
   &--bar {
     height: $bar-heigth;
-    background-color: lighten($bar-bg, 15%);
+    background-color: $gray-400;
     border-radius: 1px;
     display: flex;
+    position: relative;
   }
   
   &__item {
-    background-color: lighten($bar-bg, 5%);
+    background-color: $bar-bg;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
   
   &__name {
@@ -23,12 +27,18 @@
     padding: 0 16px;
     font-size: 16px;
     font-weight: normal;
+    position: relative;
+    z-index: 2;
+    color: $gray-300;
   }
 
   &__percent {
     padding: 0 16px;
     font-weight: 400;
     font-size: 14px;
+    color: $gray-100;
+    position: absolute;
+    right: 0;
   }
   
   &__description {

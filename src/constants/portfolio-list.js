@@ -1,40 +1,34 @@
-import Work2 from "../assets/img/work-2.webp";
-import Work1 from "../assets/img/work-1.webp";
-import Work3 from "../assets/img/work-3.webp";
-import Work4 from "../assets/img/work-4.webp";
-import Work5 from "../assets/img/work-5.webp";
-import Work6 from "../assets/img/work-6.webp";
+import Work2 from "../assets/img/page-a.png";
+import Work1 from "../assets/img/page-a.png";
+import Work3 from "../assets/img/page-a.png";
+import Work4 from "../assets/img/page-a.png";
+import Work5 from "../assets/img/page-a.png";
+import Work6 from "../assets/img/page-a.png";
 
 const listWorks = [
   {
     image: Work1,
-    text: "Nombre",
-    link: "#",
+    link: "https://edgar-ci.github.io/page-landing-a/",
   },
   {
     image: Work2,
-    text: "Nombre",
-    link: "#",
+    link: "https://edgar-ci.github.io/page-landing-a/",
   },
   {
     image: Work3,
-    text: "Nombre",
-    link: "#",
+    link: "https://edgar-ci.github.io/page-landing-a/",
   },
   {
     image: Work4,
-    text: "Nombre",
-    link: "#",
+    link: "https://edgar-ci.github.io/page-landing-a/",
   },
   {
     image: Work5,
-    text: "Nombre",
-    link: "#",
+    link: "https://edgar-ci.github.io/page-landing-a/",
   },
   {
     image: Work6,
-    text: "Nombre",
-    link: "#",
+    link: "https://edgar-ci.github.io/page-landing-a/",
   },
 ];
 

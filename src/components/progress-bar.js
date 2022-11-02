@@ -6,7 +6,6 @@ const ProgressBar = ({ name, percent }) => {
     <div className="progress">
       <div className="progress__description">
         <strong className="progress__name">{name}</strong>
-        <strong className="progress__percent">{percent}%</strong>
       </div>
       <div className="progress--bar">
         <div
@@ -18,7 +17,9 @@ const ProgressBar = ({ name, percent }) => {
           style={{
             width: `${percent}%`,
           }}
-        />
+        >
+          <strong className="progress__percent">{percent}%</strong>
+        </div>
       </div>
     </div>
   );
