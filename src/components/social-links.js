@@ -15,7 +15,7 @@ const BtnSocial = ({ className, icon, link }) => (
 
 const SocialLinks = () => {
   return (
-    <div className="social-links">
+    <div className="social-links a">
       <BtnSocial
         icon="linkedin-in"
         className="lk"
