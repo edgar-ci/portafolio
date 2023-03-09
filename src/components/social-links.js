@@ -5,8 +5,9 @@ const BtnSocial = ({ className, icon, link }) => (
   <a
     className={`btn btn-social ${className}`}
     href={link}
-    rel="noopener nofollow"
+    rel="noopener nofollow noreferrer"
     aria-label={icon}
+    target="_blank"
   >
     <i className={`fab fa-${icon}`}></i>
   </a>
@@ -16,19 +17,9 @@ const SocialLinks = () => {
   return (
     <div className="social-links">
       <BtnSocial
-        icon="twitter"
-        className="tw"
-        link="https://twitter.com/EdgarAlbertoA16"
-      />
-      <BtnSocial
         icon="linkedin-in"
         className="lk"
         link="https://www.linkedin.com/in/edgar-alberto-alvarez-garcia-10341292"
-      />
-      <BtnSocial
-        icon="instagram"
-        className="in"
-        link="https://www.instagram.com/fs.dgr"
       />
       <a
         className="btn btn-social envelope"
@@ -38,6 +29,11 @@ const SocialLinks = () => {
       >
         <i className="far fa-envelope"></i>
       </a>
+      <BtnSocial
+        icon="codepen"
+        className="pen"
+        link="https://codepen.io/edgar-ci"
+      />
     </div>
   );
 };

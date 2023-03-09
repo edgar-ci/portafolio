@@ -48,3 +48,12 @@
     color: #E84F4B;
   }
 }
+
+.pen {
+  background-color: #dfdfdf;
+  color: #222;
+  &:hover {
+    background-color: #222;
+    color: #dfdfdf;
+  }
+}

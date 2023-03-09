@@ -10,9 +10,12 @@ const About = () => {
         <div className="about__caption text-center">
           <i className="about__emoji">🤓</i>
           <p className="about__caption--description ">
-            Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet
-            dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea
-            lorem diam ea lorem
+            Soy un apasionado desarrollador con 8 años de experiencia, tengo
+            experiencia en todas las fases de un proyecto software, desde su
+            etapa de análisis hasta su entrega.
+          </p>
+          <p className="about__caption--description">
+            Siempre enfocado en la calidad y la mejora continua.
           </p>
         </div>
       </div>

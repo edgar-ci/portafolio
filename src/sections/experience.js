@@ -10,12 +10,11 @@ const Experience = () => {
           <div key={el.company} className="text-secondary experience__item">
             <small>{el.dates}</small>
             <p className="experience__header">
-              <strong>{el.title}</strong>
+              <strong>{el.company}</strong>
             </p>
             <div className="experience__subheader">
-              <strong>{el.company}</strong>
+              <p>{el.title}</p>
             </div>
-            <p className="experience__description">{el.description}</p>
           </div>
         ))}
       </div>

@@ -17,12 +17,15 @@ const Landing = () => {
         </div>
         <div>
           <h1 className="landing__name">Edgar García</h1>
-          <h2 className="landing__description">
-            Full Stack JavaScript Developer.
-          </h2>
+          <h2 className="landing__description">Full Stack Developer.</h2>
         </div>
         <SocialLinks />
-        <a href="" className="btn landing__cv--btn">
+        <a
+          target="_blank"
+          className="btn landing__cv--btn"
+          href="https://drive.google.com/file/d/1Q9MQjLVMYHyhZ3DuotI0Dy1GneuGoGWS/view?usp=sharing"
+          rel="noreferrer"
+        >
           <span></span>
           <i className="far fa-arrow-alt-circle-down"></i>
           Download CV
