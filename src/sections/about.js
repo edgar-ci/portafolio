@@ -1,6 +1,9 @@
 import React from "react";
 
 const About = () => {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  
   return (
     <div className="about container">
       <div className="about__title">
@@ -10,12 +13,10 @@ const About = () => {
         <div className="about__caption text-center">
           <i className="about__emoji">🤓</i>
           <p className="about__caption--description ">
-            Soy un apasionado desarrollador con 8 años de experiencia, tengo
-            experiencia en todas las fases de un proyecto software, desde su
-            etapa de análisis hasta su entrega.
+            I'm a frontend developer with over a {currentYear - 2015} years of experience and {currentYear - 2023} years in technical leadership, passionate about solving complex problems and driving innovation.
           </p>
           <p className="about__caption--description">
-            Siempre enfocado en la calidad y la mejora continua.
+            I bring strong problem-solving skills, a strategic mindset, and hands-on expertise in modern frontend technologies. 
           </p>
         </div>
       </div>

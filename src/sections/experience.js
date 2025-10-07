@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div className="experience">
       <div className="container experience__wrapper">
-        <h3 className="text-secondary">Expericence</h3>
+        <h3 className="text-secondary">Experience</h3>
         {qualityList.map((el) => (
           <div key={el.company} className="text-secondary experience__item">
             <small>{el.dates}</small>

@@ -23,7 +23,7 @@ const Landing = () => {
         <a
           target="_blank"
           className="btn landing__cv--btn"
-          href="https://drive.google.com/file/d/1Q9MQjLVMYHyhZ3DuotI0Dy1GneuGoGWS/view?usp=sharing"
+          href="https://drive.google.com/file/d/1pBqWM83PDOB9_ZUS-R3K6jhPQ5FfaME2/view?usp=sharing"
           rel="noreferrer"
         >
           <span></span>

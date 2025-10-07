@@ -19,7 +19,7 @@ const SocialLinks = () => {
       <BtnSocial
         icon="linkedin-in"
         className="lk"
-        link="https://www.linkedin.com/in/edgar-alberto-alvarez-garcia-10341292"
+        link="https://www.linkedin.com/in/edgar-aag/"
       />
       <a
         className="btn btn-social envelope"

@@ -22,7 +22,7 @@
   }
   
   .skills {
-    background-color: $gray-100;
+    background-color: #211426;
     padding: 80px 0;
     font-family: "Roboto", sans-serif;
     position: relative;
@@ -44,6 +44,7 @@
       z-index: -1;
       bottom: -50%;
       left: -20%;
+      opacity: 0.6;
       background-image: url("../../assets/img/resume-bg-1.svg"),
         url("../../assets/img/resume-bg-1.svg"),
         url("../../assets/img/resume-bg-1.svg"),
@@ -65,15 +66,102 @@
       margin-bottom: 40px;
       position: relative;
       text-align: center;
+      color: #F2EFDF;
     }
   
-    &--skills {
-      &--wrap {
-        flex-wrap: wrap;
-        column-gap: 16px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &--wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &--category {
+      margin-bottom: 12px;
+    }
+
+    &--category-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #656F8C;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    &--icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &--icon-card {
+      padding: 16px;
+      width: 80px;
+      height: 80px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      background: rgba(17, 15, 15, 0.56);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.2px);
+      -webkit-backdrop-filter: blur(8.2px);
+      border: 1px solid rgba(17, 15, 15, 0.7);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+        border-radius: 16px;
+        pointer-events: none;
+      }
+
+      svg {
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+        svg {
+          transform: scale(1.1);
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 70px;
+        height: 70px;
+        padding: 12px;
+        
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 12px;
+        
+        svg {
+          width: 36px;
+          height: 36px;
+        }
       }
     }
   
